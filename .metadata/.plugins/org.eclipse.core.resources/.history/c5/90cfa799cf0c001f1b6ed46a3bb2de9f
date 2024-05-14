@@ -1,0 +1,5 @@
+package br.com.serratec.model;
+
+public class Aluno {
+
+}

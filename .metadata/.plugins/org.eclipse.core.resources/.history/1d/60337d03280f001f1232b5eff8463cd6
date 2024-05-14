@@ -1,0 +1,16 @@
+package br.com.serratec.entity;
+
+import br.com.serratec.enums.Categoria;
+import br.com.serratec.enums.Combustivel;
+
+public class Caracteristica {
+	
+	private String renavam;
+	private String cor;
+	private Integer ano;
+	
+	private Categoria categoria;
+	
+	private Combustivel combustivel;
+	
+}

@@ -1,0 +1,14 @@
+package br.com.serratec.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Veiculo {
+	
+	private Long id;
+	private String placa;
+	private String marca;
+	private String modelo;
+	
+
+}

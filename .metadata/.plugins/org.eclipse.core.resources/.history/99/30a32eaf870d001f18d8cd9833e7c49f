@@ -1,0 +1,6 @@
+spring.application.name=aula-02-orm
+spring.datasource.url=jdbc:postgresql://localhost:5432/bancoapi
+spring.datasource.username = postgres
+spring.datasource.password=postgres
+spring.jpa.show-sql= true
+spring.jpa.hibernate.ddl-auto= create

@@ -1,0 +1,16 @@
+package br.com.serratec.entity;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Manutencao {
+
+	private Long id;
+	private LocalDate dataEntrada;
+	private LocalDate dataSaida;
+	private String obs;
+	
+	
+}

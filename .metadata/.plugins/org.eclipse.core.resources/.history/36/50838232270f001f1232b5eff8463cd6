@@ -1,0 +1,13 @@
+package br.com.serratec.entity;
+
+public class Caracteristica {
+	
+	private String renavam;
+	private String cor;
+	private Integer ano;
+	
+	private Categoria categoria;
+	
+	private Combustivel combustivel;
+	
+}
