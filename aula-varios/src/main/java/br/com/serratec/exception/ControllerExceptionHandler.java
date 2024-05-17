@@ -34,19 +34,28 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 	@Override
 	protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex,
 			HttpHeaders headers, HttpStatusCode status, WebRequest request) {
-	
+
 		ErroResposta er = new ErroResposta(status.value(), "Campos inválidos foram inseridos, favor verificar",
 				LocalDateTime.now(), null);
 		return super.handleExceptionInternal(ex, er, headers, status, request);
 	}
 
-	
 	@ExceptionHandler(EmailException.class) // excecção de E-mail
-	protected ResponseEntity<Object> handleEmailException (EmailException e)
-	{
+	protected ResponseEntity<Object> handleEmailException(EmailException e) {
+		List<String> erros = new ArrayList<>();
+		erros.add(e.getMessage());
 		HttpStatus http = HttpStatus.BAD_REQUEST;
-		ErroResposta er = new ErroResposta(http.value(), e.getMessage(), LocalDateTime.now(),null);
-				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(er);
-	}	
-	
+		ErroResposta er = new ErroResposta(http.value(), "Existem Erros", LocalDateTime.now(), erros);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(er);
+	}
+
+	@ExceptionHandler(ConfirmaSenhaException.class) // excecção de E-mail
+	protected ResponseEntity<Object> handleEmailException(ConfirmaSenhaException e) {
+		List<String> erros = new ArrayList<>();
+		erros.add(e.getMessage());
+		HttpStatus http = HttpStatus.BAD_REQUEST;
+		ErroResposta er = new ErroResposta(http.value(), "Existem Erros", LocalDateTime.now(), erros);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(er);
+	}
+
 }

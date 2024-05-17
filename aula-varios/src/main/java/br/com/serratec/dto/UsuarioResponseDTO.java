@@ -1,14 +1,16 @@
 package br.com.serratec.dto;
 
+import br.com.serratec.entity.Usuario;
+
 public class UsuarioResponseDTO {
 	private Long id;
 	private String nome;
 	private String email;
 
-	public UsuarioResponseDTO(Long id, String nome, String email) {
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
+	public UsuarioResponseDTO(Usuario usuario) {
+		this.id = usuario.getId();
+		this.nome = usuario.getNome();
+		this.email = usuario.getEmail();
 	}
 
 	public Long getId() {

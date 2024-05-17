@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.serratec.dto.UsuarioRequestDTO;
 import br.com.serratec.dto.UsuarioResponseDTO;
 import br.com.serratec.entity.Usuario;
 import br.com.serratec.exception.EmailException;
@@ -28,12 +29,8 @@ public class UsuarioController {
 	}
 
 	@PostMapping
-	public ResponseEntity<Object> inserir(@RequestBody Usuario usuario) {
-		try {
-			usuario = service.inserir(usuario);
-		} catch (EmailException e) {
-			return ResponseEntity.unprocessableEntity().body(e.getMessage());
-		}
-		return ResponseEntity.created(null).body(usuario);
+	public ResponseEntity<UsuarioResponseDTO> inserir(@RequestBody UsuarioRequestDTO usuario) {
+		UsuarioResponseDTO u = service.inserir(usuario);
+		return ResponseEntity.created(null).body(u);
 	}
 }

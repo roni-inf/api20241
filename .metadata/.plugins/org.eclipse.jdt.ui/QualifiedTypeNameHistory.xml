@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.web.service.annotation.GetExchange"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="br.com.serratec.model.Aluno"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
@@ -53,10 +52,12 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="br.com.serratec.entity.Usuario"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="br.com.serratec.dto.UsuarioResponseDTO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="br.com.serratec.entity.Usuario"/>
+    <fullyQualifiedTypeName name="br.com.serratec.dto.UsuarioRequestDTO"/>
+    <fullyQualifiedTypeName name="br.com.serratec.dto.UsuarioResponseDTO"/>
+    <fullyQualifiedTypeName name="br.com.serratec.exception.ConfirmaSenhaException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
