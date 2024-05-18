@@ -1,5 +1,9 @@
 package br.com.serratec.dto;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import br.com.serratec.entity.Perfil;
 import br.com.serratec.entity.Usuario;
 
 public class UsuarioRequestDTO {
@@ -7,7 +11,10 @@ public class UsuarioRequestDTO {
 	private String email;
 	private String senha;
 	private String confirmaSenha;
-
+	
+	private Set<Perfil> perfis = new HashSet<>();
+	
+	
 	public UsuarioRequestDTO() {
 	}
 
@@ -15,6 +22,12 @@ public class UsuarioRequestDTO {
 		nome = usuario.getNome();
 		email = usuario.getEmail();
 		senha = usuario.getSenha();
+	}
+
+	
+	
+	public Set<Perfil> getPerfis() {
+		return perfis;
 	}
 
 	public String getNome() {

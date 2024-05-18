@@ -43,7 +43,6 @@
     <fullyQualifiedTypeName name="br.com.serratec.repository.UsuarioRepository"/>
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
     <fullyQualifiedTypeName name="br.com.serratec.exception.EmailException"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="br.com.serratec.dto.UsuarioResponseDTO"/>
     <fullyQualifiedTypeName name="br.com.serratec.exception.ConfirmaSenhaException"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>

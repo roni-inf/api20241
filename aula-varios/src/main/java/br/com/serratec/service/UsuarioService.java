@@ -14,6 +14,7 @@ import br.com.serratec.entity.Usuario;
 import br.com.serratec.exception.ConfirmaSenhaException;
 import br.com.serratec.exception.EmailException;
 import br.com.serratec.repository.UsuarioRepository;
+import jakarta.transaction.Transactional;
 
 @Service
 public class UsuarioService {
@@ -38,6 +39,7 @@ public class UsuarioService {
 				.collect(Collectors.toList());
 	}
 
+	@Transactional
 	public UsuarioResponseDTO inserir(UsuarioRequestDTO usuario){
 		if (!usuario.getSenha().equals(usuario.getConfirmaSenha())) {
 			throw new ConfirmaSenhaException("Confirma de senha não confere!");

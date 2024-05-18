@@ -50,7 +50,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	@ExceptionHandler(ConfirmaSenhaException.class) // excecção de E-mail
-	protected ResponseEntity<Object> handleEmailException(ConfirmaSenhaException e) {
+	protected ResponseEntity<Object> handleConfirmaSenhaException(ConfirmaSenhaException e) {
 		List<String> erros = new ArrayList<>();
 		erros.add(e.getMessage());
 		HttpStatus http = HttpStatus.BAD_REQUEST;
@@ -58,4 +58,16 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(er);
 	}
 
+	
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<Object> handleResourceNotFoundException(ResourceNotFoundException ex) {
+
+		List<String> erros = new ArrayList<>();
+		erros.add(ex.getMessage());
+
+		ErroResposta erroResposta = new ErroResposta(HttpStatus.NOT_FOUND.value(), "Recurso não encontrado",
+				LocalDateTime.now(), erros);
+
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erroResposta);
+	}
 }
