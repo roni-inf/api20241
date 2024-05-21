@@ -1,6 +1,0 @@
-spring.application.name=aula-04-h2
-spring.profiles.active= dev
-spring.jpa.show-sql= true
-spring.jpa.hibernate.ddl-auto= update
-spring.jackson.deserialization.fail-on-unknown-properties=true
-

@@ -26,6 +26,8 @@ public class UsuarioRequestDTO {
 
 	
 	
+	
+	
 	public Set<Perfil> getPerfis() {
 		return perfis;
 	}
