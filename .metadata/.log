@@ -5670,3 +5670,348 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-20 21:25:14.582
 !MESSAGE Classpath changed for project: aula-varios
+!SESSION 2024-05-21 18:03:39.111 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-21 18:03:43.143
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-21 18:04:21.495
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-21 18:04:21.495
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-21 18:04:27.188
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/roni_/Documents/API-2024-1/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716325467187
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:27.191
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-21 18:04:27.244
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 23932
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-21 18:04:28.100
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-21 18:04:30.204
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\roni_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.447
+!MESSAGE Boot project ADDED: aula-01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.449
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.453
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.510
+!MESSAGE Boot project ADDED: aula-02-orm
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.525
+!MESSAGE Boot project ADDED: aula-04-h2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:04:30.528
+!MESSAGE Boot project ADDED: aula-varios
+!SESSION 2024-05-21 18:05:54.211 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-21 18:05:55.932
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-05-21 18:06:04.537
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-21 18:06:04.537
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-21 18:06:08.648
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\roni_'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.077
+!MESSAGE Boot project ADDED: aula-01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.080
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.212
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.232
+!MESSAGE Boot project ADDED: aula-02-orm
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.244
+!MESSAGE Boot project ADDED: aula-04-h2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.256
+!MESSAGE Boot project ADDED: aula-varios
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-21 18:06:09.292
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\roni_\Downloads\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/roni_/Documents/API-2024-1/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1716325569290
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:06:09.294
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-21 18:06:09.377
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19080
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-05-21 18:06:09.675
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:14:07.021
+!MESSAGE Classpath changed for project: aula-01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:14:12.718
+!MESSAGE Classpath changed for project: aula-02-orm
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:14:14.286
+!MESSAGE Classpath changed for project: aula-04-h2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:14:16.154
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:15:55.467
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:18:11.165
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:25:52.513
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:28:11.302
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:28:52.061
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:30:20.094
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:30:49.912
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:31:59.306
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:33:17.262
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-21 18:33:55.765
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:34:00.345
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:34:07.869
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:38:14.884
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:38:18.124
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:41:33.238
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:45:32.394
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 18:57:28.389
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:25:20.855
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:33:09.689
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-05-21 19:34:05.742
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:36:57.637
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:44:49.542
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:46:10.610
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 19:50:58.095
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:23:17.251
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:24:23.595
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:29:30.174
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:30:28.073
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:32:48.783
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:34:44.560
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:37:54.722
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:38:22.289
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:38:54.069
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 20:39:31.960
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 21:01:24.074
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 21:03:54.246
+!MESSAGE Classpath changed for project: aula-varios
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-21 21:05:09.629
+!MESSAGE Classpath changed for project: aula-varios
